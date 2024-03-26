@@ -33,8 +33,7 @@ cursor.execute('''
 employeeList = list()
 
 for row in cursor:
-    if row.Store_Location_Total.strip() == "Amelia":
-        employeeList.append((row.LastName.strip(),row.FirstName.strip(),row.EmployeeTransactions))
+    employeeList.append((row.LastName.strip(),row.FirstName.strip(),row.EmployeeTransactions))
     
 if __name__ == "__main__":
     print(employeeList)
