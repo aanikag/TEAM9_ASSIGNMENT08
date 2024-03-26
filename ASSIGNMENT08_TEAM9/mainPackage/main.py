@@ -12,3 +12,11 @@
 # Citations:
 # Anything else that's relevant:
 
+#main.py
+
+from connectPackage.connect import *
+
+if __name__ == "__main__":
+    print("The below employees work in the Amelia store location and are ordered by their total transactions from least to greatest:")
+    for LastName, FirstName, EmployeeTransactions in employeeList:
+        print("Name:", FirstName + " " + LastName + "; " + "Total Transactions:", EmployeeTransactions)
